@@ -12,5 +12,7 @@ public record Listing(
     DealType DealType,
     string Title,
     int Price,
-    float Rooms
+    float Rooms,
+    string city,
+    int zipcode
 );

@@ -17,9 +17,7 @@ public class ListingController : ControllerBase
     public IEnumerable<Listing> Get()
     {
         return Enumerable.Range(1, 50)
-            .Select(
-                index =>ListingGenerator.GenerateListing(index)
-                )
-        .ToArray();
+            .Select(index => ListingGenerator.GenerateListing(index))
+            .ToArray();
     }
 }
