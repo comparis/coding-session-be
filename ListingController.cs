@@ -12,10 +12,10 @@ namespace Api
         private readonly Random _random = new Random();
         private readonly ListingDataSource _listingDataSource;
     
-        public ListingController(ILogger<ListingController> logger, ListingDataSource? listingDataSource = null)
+        public ListingController(ILogger<ListingController> logger)
         {
             _logger = logger;
-            _listingDataSource = listingDataSource ?? new ListingDataSource();
+            _listingDataSource = new ListingDataSource();
         }
     
         [HttpGet]
